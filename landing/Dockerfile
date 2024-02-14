@@ -9,11 +9,11 @@ RUN apt-get update && \
 # Remove the default Nginx configuration
 RUN rm /etc/nginx/conf.d/default.conf
 
-# Copy landing page
-COPY index.html /usr/share/nginx/html/
-
 # Copy nginx config
 COPY nginx.conf /etc/nginx/conf.d/
+
+# Copy everything in the src folder to /usr/share/nginx/html
+COPY src /usr/share/nginx/html
 
 # Copy the entrypoint script
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh

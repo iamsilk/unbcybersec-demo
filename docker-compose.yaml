@@ -14,3 +14,24 @@ services:
       DOMAIN: demo.unbcybersec.com
       USE_CERTBOT: true
       CERTBOT_EMAIL: letsencrypt@unbcybersec.com
+
+  web_dictionary:
+    build:
+      context: challenges/web/dictionary
+      dockerfile: Dockerfile
+    ports:
+      - "50023:80"
+
+  web_cats:
+    build:
+      context: challenges/web/cats
+      dockerfile: Dockerfile
+    ports:
+      - "50011:80"
+
+  web_calculator:
+    build:
+      context: challenges/web/calculator
+      dockerfile: Dockerfile
+    ports:
+      - "50036:5000"
