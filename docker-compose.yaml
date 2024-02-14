@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  landing:
+    build:
+      context: landing
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./certificates:/etc/nginx/ssl
+    environment:
+      DOMAIN: demo.unbcybersec.com
+      USE_CERTBOT: true
+      CERTBOT_EMAIL: letsencrypt@unbcybersec.com
