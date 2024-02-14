@@ -123,13 +123,14 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Java Moose 1</h5>
-                            <p class="card-text">Sometimes the password is right there...</p>
+                            <p class="card-text">Sometimes the flag is right there...</p>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter the flag">
+                                <input id="inputJavaMoose1" type="text" class="form-control" placeholder="Enter the flag: demo{...}">
                                 <div class="input-group-append">
-                                    <button class="btn btn-danger">Check</button>
+                                    <button class="btn btn-danger" onclick="checkAnswer('inputJavaMoose1', 'outputJavaMoose1', '')">Check</button>
                                 </div>
                             </div>
+                            <div id="outputJavaMoose1"></div>
                         </div>
                     </div>
                 </div>
@@ -138,13 +139,30 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Java Moose 2</h5>
-                            <p class="card-text">And sometimes the password is nearby...</p>
+                            <p class="card-text">Sometimes the password is right there...</p>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter the flag">
+                                <input id="inputJavaMoose2" type="text" class="form-control" placeholder="Enter the flag: demo{...}">
                                 <div class="input-group-append">
-                                    <button class="btn btn-danger">Check</button>
+                                    <button class="btn btn-danger" onclick="checkAnswer('inputJavaMoose2', 'outputJavaMoose2', '')">Check</button>
                                 </div>
                             </div>
+                            <div id="outputJavaMoose2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Java Moose 3</h5>
+                            <p class="card-text">Sometimes they're both nearby...</p>
+                            <div class="input-group">
+                                <input id="inputJavaMoose3" type="text" class="form-control" placeholder="Enter the flag: demo{...}">
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger" onclick="checkAnswer('inputJavaMoose3', 'outputJavaMoose3', '')">Check</button>
+                                </div>
+                            </div>
+                            <div id="outputJavaMoose3"></div>
                         </div>
                     </div>
                 </div>
