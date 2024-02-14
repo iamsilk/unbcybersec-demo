@@ -18,13 +18,13 @@ Url: `http://demo.unbcybersec.com:50011`
 
 Flag: `demo{the_c4ts_ar3_tr4ver5ing_d1rect0ri3s}`
 
-### Placeholder (SQL Injection)
+### adminsonly (SQL Injection)
 
 Many apps use SQL for their databases... and some apps let us inject our own.
 
-Url: `http://demo.unbcybersec.com:placeholder`
+Url: `http://demo.unbcybersec.com:50040`
 
-Flag: `demo{placeholder}`
+Flag: `demo{SQLI_m4k3s_4dm1ns_crI}`
 
 ### calculator (Remote Code Execution)
 

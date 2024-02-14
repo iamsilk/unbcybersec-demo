@@ -93,19 +93,19 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Remote Code Execution</h5>
+                            <h5 class="card-title">SQL Injection</h5>
                             <p class="card-text">
-                                Coding is fun, but surely no one can run their own on my server...
+                                Many apps use SQL for their databases... and some apps let us inject our own.
                                 <hr>
-                                <a target="_blank" href="http://demo.unbcybersec.com:50036">calculator</a>
+                                <a target="_blank" href="http://demo.unbcybersec.com:50040">adminsonly</a>
                             </p>
                             <div class="input-group">
-                                <input id="inputRemoteCodeExecution" type="text" class="form-control" placeholder="Enter the flag: demo{...}">
+                                <input id="inputSQLI" type="text" class="form-control" placeholder="Enter the flag: demo{...}">
                                 <div class="input-group-append">
-                                    <button class="btn btn-danger" onclick="checkAnswer('inputRemoteCodeExecution', 'outputRemoteCodeExecution', '95538a6faa1bc76237818e53043ee65c638cf1d8f288da2114882ae6f0d61049')">Check</button>
+                                    <button class="btn btn-danger" onclick="checkAnswer('inputSQLI', 'outputSQLI', 'f4805145ebdb57a1359f8c58b31b0d532324c5ff09d70d71739ade1db71e92d0')">Check</button>
                                 </div>
                             </div>
-                            <div id="outputRemoteCodeExecution"></div>
+                            <div id="outputSQLI"></div>
                         </div>
                     </div>
                 </div>

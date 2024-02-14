@@ -1,0 +1,38 @@
+<%- include('layouts/head', { title: 'Admin Dashboard' }) %>
+
+<body>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-success text-white">
+        <h1 class="text-center">Admin Dashboard</h1>
+      </div>
+      <div class="card-body">
+        <h2>Hello, <%= username %>.</h2>
+        <div>
+          <p>Flag: <%= flag %></p>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% users.forEach(user => { %>
+              <tr>
+                <td><%= user.username %></td>
+                <td><%= user.password %></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+        <a href="/logout" class="btn btn-danger">Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <%- include('layouts/footer') %>
+</body>
+
+</html>

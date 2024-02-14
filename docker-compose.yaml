@@ -28,6 +28,13 @@ services:
       dockerfile: Dockerfile
     ports:
       - "50011:80"
+  
+  web_adminsonly:
+    build:
+      context: challenges/web/adminsonly
+      dockerfile: Dockerfile
+    ports:
+      - "50040:3000"
 
   web_calculator:
     build:
