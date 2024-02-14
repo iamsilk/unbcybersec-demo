@@ -79,21 +79,6 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">SQL Injection</h5>
-                            <p class="card-text">Many apps use SQL for their databases... and some apps let us inject our own.</p>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter the flag">
-                                <div class="input-group-append">
-                                    <button class="btn btn-danger">Check</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">SQL Injection</h5>
                             <p class="card-text">
                                 Many apps use SQL for their databases... and some apps let us inject our own.
                                 <hr>
@@ -106,6 +91,26 @@
                                 </div>
                             </div>
                             <div id="outputSQLI"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Remote Code Execution</h5>
+                            <p class="card-text">
+                                Coding is fun, but surely no one can run their own on my server...
+                                <hr>
+                                <a target="_blank" href="http://demo.unbcybersec.com:50036">calculator</a>
+                            </p>
+                            <div class="input-group">
+                                <input id="inputRCE" type="text" class="form-control" placeholder="Enter the flag: demo{...}">
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger" onclick="checkAnswer('inputRCE', 'outputRCE', '95538a6faa1bc76237818e53043ee65c638cf1d8f288da2114882ae6f0d61049')">Check</button>
+                                </div>
+                            </div>
+                            <div id="outputRCE"></div>
                         </div>
                     </div>
                 </div>
