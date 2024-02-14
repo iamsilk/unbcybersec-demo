@@ -5,7 +5,7 @@ public class JavaMooseTwo {
         Scanner scanner = new Scanner(System.in);
 
         String password = "qwertyuiop";
-        String flagEncrypted = "1512081d0f1d460a5f1d014609433a402a583c2f2125564543002a225c271d56440f";
+        String flagEncrypted = "1512081d0f4e3d585a2f4647321c2b4d4407582f13465c2d4737453c56182e1155002b4e3d5a304706473a423226205b4e0d";
 
         System.out.print("Enter the password: ");
         String inputPassword = scanner.nextLine();
