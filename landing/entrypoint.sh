@@ -16,8 +16,7 @@ if [ "$USE_CERTBOT" = "true" ] && ( [ ! -f "$CERT_DIR/fullchain.pem" ] || [ ! -f
     --agree-tos \
     --email "$CERTBOT_EMAIL" \
     --domains "$DOMAIN" \
-    --webroot \
-    --webroot-path "/usr/share/nginx/html"
+    --standalone
 
   # Move the obtained certificates to the specified directory
   cp /etc/letsencrypt/live/"$DOMAIN"/* "$CERT_DIR"
