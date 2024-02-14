@@ -10,10 +10,10 @@ services:
       - "443:443"
     volumes:
       - ./certificates:/etc/nginx/ssl
-      - ./crypto/spinmerightround/index.html:/usr/share/nginx/html/spinmerightround.html:ro
+      - ./challenges/crypto/spinmerightround/index.html:/usr/share/nginx/html/spinmerightround.html:ro
     environment:
       DOMAIN: demo.unbcybersec.com
-      USE_CERTBOT: true
+      # USE_CERTBOT: true
       CERTBOT_EMAIL: letsencrypt@unbcybersec.com
 
   web_dictionary:
